@@ -8,6 +8,83 @@ body{
     background: rgb(70,58,45);
 background: linear-gradient(90deg, rgba(70,58,45,1) 17%, rgba(74,43,11,1) 57%, rgba(215,139,78,1) 96%);
 }
+
+/* MENU */
+.contenedor-header {
+    background: #4A2B0B;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    font-size: 15px;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.contenedor-header header .logo img {
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #D78B4E;
+    text-decoration: none;
+
+}
+
+.logo img {
+    height: 250px;
+    padding: 25px;
+    display: flex;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #D78B4E;
+ 
+}
+
+.nav-responsive {
+    background-color: #fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
 .formulario-registro{
     width: 400px;
     background: #463A2D;
