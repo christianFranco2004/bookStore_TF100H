@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #DDD0C8;
+
+}
+
+/* MENU */
+.contenedor-header {
+    background: #4A2B0B;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    font-size: 15px;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.contenedor-header header .logo img {
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #D78B4E;
+    text-decoration: none;
+
+}
+
+.logo img {
+    height: 250px;
+    padding: 25px;
+    display: flex;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #D78B4E;
+ 
+}
+
+.nav-responsive {
+    background-color: #fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+/*Inicio main*/
+
+.contentSection {
+    width: 80vw;
+    margin: 100px auto;
+    /*centrar contenedor*/
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    /*Tamaño de fuente*/
+    text-align: center;
+    /*centrar texto*/
+    margin-bottom: 40px;
+    /*margen de abajo*/
+
+}
+
+
+.container {
+    width: 100%;
+    /*hereda el ancho del papa-> section*/
+    display: flex;
+    /*centrar los elementos*/
+    justify-content: center;
+    /*centrar verticalmente*/
+    align-items: center;
+    gap: 40px;
+
+    /*espaciar el parrafo de la imagen*/
+}
+
+.container img {
+    width: 25%;
+    border-radius: 30px;
+    /*redondeo de bordes de la imagen*/
+
+}
+
+.container p {
+    width: 65%;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    text-align: end;
+    /*alineacion del texto*/
+    line-height: 35px;
+    /*espacio entre lineas de texto*/
+    letter-spacing: 2px;
+    /*espacio entre letras*/
+
+}
+
+.container iframe {
+    /*primero .+contenedor padre+etiqueta*/
+    width: 35%;
+    height: 300px;
+    border-radius: 30px;
+}
+
+
+/*--------------------INICIO FOOTER--------------------*/
+.pie-pagina {
+    width: 100%;
+    background-color: #4A2B0B;
+}
+
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.pie-pagina .grupo1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: "Roboto Slab", serif;
+
+}
+
+.pie-pagina .grupo1 .redsocial a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #221000;
+    text-align: center;
+    transition: all 300ms ease;
+    transition: 0.5s;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover {
+    transform: translateY(-10px);
+    color: #D78B4E;
+}
+
+.pie-pagina .grupo2 {
+    background-color: #4A2B0B;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo2 small {
+    font-size: 15px;
+    font-family: "Roboto Slab", serif;
+
+}
+
+/*--------------------FIN FOOTER--------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .pie-pagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .contenedor-header {
+        background: #4A2B0B;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        font-size: 15px;
+
+    }
+
+    .contenedor-header header ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .contentSection {
+        width: 80vw;
+        margin: 100px auto;
+        /*centrar contenedor*/
+    }
+
+    .title {
+        font-family: "Playfair Display", serif;
+        font-size: 50px;
+        /*Tamaño de fuente*/
+        text-align: center;
+        /*centrar texto*/
+        margin-bottom: 40px;
+        /*margen de abajo*/
+
+    }
+
+
+    .container {
+        width: 100%;
+        /*hereda el ancho del papa-> section*/
+        /*centrar los elementos*/
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr);*/
+        grid-gap: 30px;
+        border: solid red;
+        flex-direction: column;
+
+
+        /*espaciar el parrafo de la imagen*/
+    }
+
+    .container img {
+        width: 70%;
+        border-radius: 30px;
+        /*redondeo de bordes de la imagen*/
+
+    }
+
+    .container p {
+        width: 100%;
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+        /*alineacion del texto*/
+        line-height: 35px;
+        /*espacio entre lineas de texto*/
+        letter-spacing: 2px;
+        /*espacio entre letras*/
+
+    }
+
+    .container iframe {
+        /*primero .+contenedor padre+etiqueta*/
+        width: 100%;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    .pie-pagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+
+    }
+
+}

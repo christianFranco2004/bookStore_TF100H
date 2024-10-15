@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(70,58,45);
+background: linear-gradient(90deg, rgba(70,58,45,1) 17%, rgba(74,43,11,1) 57%, rgba(215,139,78,1) 96%);
+}
+
+
+
+/* MENU */
+.contenedor-header {
+    background: #4A2B0B;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    font-size: 15px;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.contenedor-header header .logo img {
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #D78B4E;
+    text-decoration: none;
+
+}
+
+.logo img {
+    height: 250px;
+    padding: 25px;
+    display: flex;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #D78B4E;
+}
+
+.nav-responsive {
+    background-color: #fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.formulario-contactanos{
+    width: 400px;
+
+    background: #463A2D;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulario-contactanos h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controles{
+    width: 100%;
+    background:#fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #4A2B0B ;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+
+.formulario-contactanos p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.formulario-contactanos a{
+    color: #fff;
+    text-decoration: none;
+}
+.formulario-contactanos a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.formulario-contactanos .boton{
+    width: 100%;
+    background: #D78B4E;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
+/*--------------------INICIO FOOTER--------------------*/
+.pie-pagina {
+    width: 100%;
+    background-color: #4A2B0B;
+}
+
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.pie-pagina .grupo1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: "Roboto Slab", serif;
+
+}
+
+.pie-pagina .grupo1 .redsocial a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #221000;
+    text-align: center;
+    transition: all 300ms ease;
+    transition: 0.5s;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover {
+    transform: translateY(-10px);
+    color: #D78B4E;
+}
+
+.pie-pagina .grupo2 {
+    background-color: #4A2B0B;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo2 small {
+    font-size: 15px;
+    font-family: "Roboto Slab", serif;
+
+}
+
+/*--------------------FIN FOOTER--------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .pie-pagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .contenedor-header {
+        background: #4A2B0B;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        font-size: 15px;
+
+    }
+
+    .contenedor-header header ul {
+        display: flex;
+        list-style: none;
+    }
+
+
+
+
+
+    .pie-pagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+
+    }
+
+}
